@@ -19,7 +19,9 @@ install:
  #- pip install -r requirements.txt --use-mirrors
    # Install whatever version of Django that's listed above
    # Travis is currently working on
- - pip install -q Django==$DJANGO_VERSION 
+   
+   #-q mock==1.0.1 Django==$DJANGO_VERSION coverage coveralls
+ - pip install -q mock==1.0.1 Django==$DJANGO_VERSION coverage coveralls
 # Tell Travis how to run the test script itself
 script: python runtests.py
 sudo: false
