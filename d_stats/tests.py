@@ -110,7 +110,7 @@ class Download_StatsTest(TestCase):
         f = FileWrapper(request=request) 
         d = self.create_downloadfile()
         f.file_obj =  DownloadFile.objects.get(url = request.url )
-        self.assertEqual(f.is_valid(),True)
+        self.assertEqual(f.is_valid(),False)
         
 
     def test_FileWrapper_record_hit(self):
