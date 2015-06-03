@@ -15,7 +15,7 @@ settings.configure(DEBUG=True,
                               'django.contrib.admin',
                               'd_stats',))
 
-from django.test.runner import DjangoTestSuiteRunner
+from django.test.simple import DjangoTestSuiteRunner
 test_runner = DjangoTestSuiteRunner(verbosity=1)
 failures = test_runner.run_tests(['d_stats', ])
 if failures:
