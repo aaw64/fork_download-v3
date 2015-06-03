@@ -20,5 +20,5 @@ test_runner = DjangoTestSuiteRunner(verbosity=1)
 failures = test_runner.run_tests(['d_stats', ])
 if failures:
     sys.exit(failures)
-~                                                                                                                                                                                                            
-~                
+                                                                                                                                                                                                           
+                
