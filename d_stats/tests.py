@@ -10,7 +10,7 @@ Replace this with more appropriate tests for your application.
 from django.test import TestCase
 from django.utils import timezone
 from models import DownloadFile, DownloadRecord
-from download_stats.helpers import FileRegistry , FileWrapper
+from .helpers import FileRegistry , FileWrapper
 from django.http import HttpRequest , HttpResponse , Http404
 from django.test.client import Client 
 from django.conf import settings
