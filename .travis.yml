@@ -26,3 +26,6 @@ install:
 # Tell Travis how to run the test script itself
 script: python runtests.py
 sudo: false
+after_success:
+  - coveralls
+
