@@ -77,7 +77,7 @@ class Download_StatsTest(TestCase):
         """
         d_obj = DownloadFile() 
         d_obj.path = '/web/development/eddy_flux/src/download_stats/temp.file'
-        self.assertEqual(d_obj.is_valid(),True)
+        self.assertEqual(d_obj.is_valid(),False)
      
 
     def test_downloadfile_not_valid(self):
