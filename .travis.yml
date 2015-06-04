@@ -24,7 +24,7 @@ install:
  - pip install -q mock==1.0.1 Django==$DJANGO_VERSION #coverage coveralls
  - pip install coveralls
 # Tell Travis how to run the test script itself
-script: python runtests.py
+script: coverage run runtests.py
 sudo: false
 after_success:
   - coveralls
